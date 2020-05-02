@@ -1,0 +1,7 @@
+{
+  "name": "moppina",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
