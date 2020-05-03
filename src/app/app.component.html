@@ -1,9 +1,19 @@
+
 <ion-app>
+  <ion-header [translucent]="true">
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-searchbar showCancelButton="never" enterkeyhint="search"></ion-searchbar>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
   <ion-split-pane contentId="main-content">
     <ion-menu contentId="main-content" type="overlay">
-      <ion-content>
+      <ion-content> 
         <ion-list id="inbox-list">
-          <ion-list-header>Inbox</ion-list-header>
+          <ion-list-header></ion-list-header>
           <ion-note>hi@ionicframework.com</ion-note>
 
           <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
@@ -26,4 +36,14 @@
     </ion-menu>
     <ion-router-outlet id="main-content"></ion-router-outlet>
   </ion-split-pane>
+</ion-content>
+<ion-footer class="ion-no-border">
+  <ion-grid>
+  <ion-row class="ion-justify-content-center">
+    <ion-col>
+      <ion-fab-button size="small"><ion-icon name="play-circle-outline"></ion-icon></ion-fab-button>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+</ion-footer>
 </ion-app>
