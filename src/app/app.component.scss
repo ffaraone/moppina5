@@ -117,3 +117,9 @@ ion-note {
 ion-item.selected {
   --color: var(--ion-color-primary);
 }
+
+.play-item {
+  --padding-start: 0px;
+  --inner-padding-top: 0px;
+  --inner-padding-bottom: 0px;
+}
