@@ -11,6 +11,7 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 })
 export class AppComponent implements OnInit {
   public selectedIndex = 0;
+  public searchTerms = '';
   public appPages = [
     {
       title: 'Inbox',
@@ -44,6 +45,11 @@ export class AppComponent implements OnInit {
     }
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
+
+
+  search(event) {
+    console.log(this.searchTerms)
+  }
 
   constructor(
     private platform: Platform,
