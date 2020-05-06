@@ -118,8 +118,14 @@ ion-item.selected {
   --color: var(--ion-color-primary);
 }
 
-.play-item {
+.now-playing {
   --padding-start: 0px;
   --inner-padding-top: 0px;
   --inner-padding-bottom: 0px;
+}
+
+.footer-phone {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }

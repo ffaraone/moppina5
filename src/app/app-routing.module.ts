@@ -4,16 +4,16 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'search-page',
+    redirectTo: 'small',
     pathMatch: 'full'
   },
   {
-    path: 'folder/:id',
-    loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
+    path: 'small',
+    loadChildren: () => import('./layouts/small/small.module').then( m => m.SmallPageModule)
   },
   {
-    path: 'search-page',
-    loadChildren: () => import('./search/search-page/search-page.module').then( m => m.SearchPagePageModule)
+    path: 'large',
+    loadChildren: () => import('./layouts/large/large.module').then( m => m.LargePageModule)
   }
 ];
 
@@ -24,3 +24,6 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule {}
+
+
+
